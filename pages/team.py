@@ -188,7 +188,14 @@ def teams(competitions_df: pd.DataFrame, matches_df: pd.DataFrame, players_df: p
 
     with st.expander("Dataframe completo de partidas"):
         st.dataframe(
-            filtred_matches_df, use_container_width=True
+            matches_df, use_container_width=True
+        )
+        st.download_button(
+            label="Download CSV",
+            data=matches_df,
+            file_name="data.csv",
+            mime="text/csv",
+            icon=":material/download:",
         )
 
 

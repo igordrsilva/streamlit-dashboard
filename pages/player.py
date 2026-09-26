@@ -151,6 +151,14 @@ def players(competitions_df: pd.DataFrame, matches_df: pd.DataFrame, players_df:
         hide_index=True,
         use_container_width=True
     )
+    st.text("Baixe o dataframe completo de jogadores")
+    st.download_button(
+            label="Download CSV",
+            data=players_df,
+            file_name="data.csv",
+            mime="text/csv",
+            icon=":material/download:",
+        )
 
     
 

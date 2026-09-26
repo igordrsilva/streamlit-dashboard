@@ -96,6 +96,13 @@ def matches(matches_df: pd.DataFrame) -> None:
             matches_df,
             use_container_width=True
         )
+        st.download_button(
+            label="Download CSV",
+            data=matches_df,
+            file_name="data.csv",
+            mime="text/csv",
+            icon=":material/download:",
+        )
 
 matches_df = st.session_state["matches_df"]
 matches(matches_df)
