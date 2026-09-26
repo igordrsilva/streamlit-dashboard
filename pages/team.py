@@ -190,13 +190,6 @@ def teams(competitions_df: pd.DataFrame, matches_df: pd.DataFrame, players_df: p
         st.dataframe(
             matches_df, use_container_width=True
         )
-        st.download_button(
-            label="Download CSV",
-            data=matches_df,
-            file_name="data.csv",
-            mime="text/csv",
-            icon=":material/download:",
-        )
 
 
 competitions_df = st.session_state["competitions_df"]
