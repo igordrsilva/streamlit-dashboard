@@ -1,0 +1,10 @@
+core/__init__.py
+core/__pycache__/__init__.cpython-314.pyc
+core/__pycache__/extract_data.cpython-314.pyc
+core/__pycache__/utils.cpython-314.pyc
+pages/__init__.py
+pages/__pycache__/__init__.cpython-314.pyc
+pages/__pycache__/match.cpython-314.pyc
+pages/__pycache__/player.cpython-314.pyc
+pages/__pycache__/sidebar.cpython-314.pyc
+pages/__pycache__/team.cpython-314.pyc
